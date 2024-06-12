@@ -1,4 +1,4 @@
-
+"use client";
 import { Montserrat } from 'next/font/google';
 import { IoArrowForward } from "react-icons/io5";
 import React from 'react';
@@ -11,7 +11,7 @@ const montserrat = Montserrat({
     subsets: ['latin']
 });
 
-const Page = () => {
+const Hero = () => {
     const videoSrc = '/style1.mp4';
     return (
         <>
@@ -55,4 +55,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Hero;

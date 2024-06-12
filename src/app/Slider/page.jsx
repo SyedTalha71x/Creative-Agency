@@ -23,7 +23,7 @@ const designations = [
     '13/05/2023',
 ];
 
-const CustomSlider = () => {
+const Slider = () => {
     const [startIndex, setStartIndex] = useState(0);
     const zoomInOutVariants = {
         hidden: { scale: 0.5, opacity: 0 },
@@ -101,4 +101,4 @@ const CustomSlider = () => {
     );
 };
 
-export default CustomSlider;
+export default Slider;

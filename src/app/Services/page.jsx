@@ -5,7 +5,7 @@ import Image from 'next/image';
 import AnimateOnScroll from '../AnimateOnScroll/page';
 import AnimatedText from '../DifferentAnimations/TextTypingAnimation/page';
 
-const Page = () => {
+const Services = () => {
     const slideUpDownVariants = {
         hidden: { x: 95, opacity: 0 },
         visible: { x: 0, opacity: 1, transition: { duration: 1.6 } }
@@ -93,4 +93,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Services;

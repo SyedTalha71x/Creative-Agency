@@ -7,7 +7,7 @@ const MontserratFont = Montserrat({
     weight: ['900'],
     subsets: ['latin'],
 });
-export default function MultiLayerParallax() {
+export default function ParallexAffect() {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,

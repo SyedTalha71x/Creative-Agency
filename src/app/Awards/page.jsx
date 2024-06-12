@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import AnimateOnScroll from '../AnimateOnScroll/page';
 
 
-const Page = () => {
+const Awards = () => {
 
     const slideUpDownVariants = {
         hidden: { x: 75, opacity: 0 },
@@ -134,4 +134,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Awards

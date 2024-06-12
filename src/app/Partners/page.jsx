@@ -5,7 +5,7 @@ import Image from 'next/image'
 import AnimateOnScroll from '../AnimateOnScroll/page';
 
 
-const Page = () => {
+const Partners = () => {
 
     const zoomRotateVariants = {
         hidden: { scale: 0.5, rotate: 90, opacity: 0 },
@@ -88,4 +88,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Partners

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from 'react';
 
-const Page = () => {
+const Homepage = () => {
     useEffect(() => {
         const handlePointerMove = (e) => {
             const cursor = document.querySelector('.cursor');
@@ -33,4 +33,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Homepage;

@@ -1,11 +1,10 @@
-
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useAnimation } from "framer-motion"
 import { IoArrowForward } from "react-icons/io5";
 import AnimateOnScroll from '../AnimateOnScroll/page';
 
-const Page = () => {
+const Connect = () => {
     const zoomInOutVariants = {
         hidden: { scale: 0.5, opacity: 0 },
         visible: {
@@ -50,4 +49,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Connect;

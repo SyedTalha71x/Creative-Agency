@@ -25,7 +25,7 @@ const designations = [
     'Backend Lead'
 ];
 
-const CustomSlider = () => {
+const Team = () => {
     const [startIndex, setStartIndex] = useState(0);
     const [hoverIndex, setHoverIndex] = useState(-1);
 
@@ -142,4 +142,4 @@ const CustomSlider = () => {
     );
 };
 
-export default CustomSlider;
+export default Team;

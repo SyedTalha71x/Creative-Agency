@@ -1,7 +1,8 @@
+"use client";
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const AnimatedText = ({ text }) => {
+const TextTypingAnimation = ({ text }) => {
     const words = text.split(" ");
 
     return (
@@ -23,4 +24,4 @@ const AnimatedText = ({ text }) => {
     );
 };
 
-export default AnimatedText;
+export default TextTypingAnimation;

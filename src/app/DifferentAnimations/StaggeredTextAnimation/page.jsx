@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const textAnimation = {
+const StaggeredTextAnimation = {
     hidden: {
         opacity: 0,
         y: 20,
@@ -77,4 +77,4 @@ const AnimatedText = ({
     );
 };
 
-export default AnimatedText;
+export default StaggeredTextAnimation;

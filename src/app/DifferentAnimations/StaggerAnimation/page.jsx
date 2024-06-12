@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const StaggeredList = ({ items, initiallyOpen }) => {
+const StaggerAnimation = ({ items, initiallyOpen }) => {
     const [open, setOpen] = useState(initiallyOpen);
     const controls = useAnimation();
     const listRef = useRef(null);
@@ -63,4 +63,4 @@ const StaggeredList = ({ items, initiallyOpen }) => {
     );
 };
 
-export default StaggeredList;
+export default StaggerAnimation;

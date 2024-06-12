@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, useAnimation } from "framer-motion"
-const Page = () => {
+const MovingText = () => {
 
     const ref = useRef(null);
     const mainControls = useAnimation();
@@ -53,4 +53,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default MovingText
