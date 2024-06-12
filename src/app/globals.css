@@ -3,31 +3,524 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --accent: #ff4a17
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* body {
+  background-color: black;
+} */
+
+.rowservice {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+@keyframes animo-x {
+  0% {
+    transform: translateX(90%);
+    /* Initial position */
+  }
+
+  50% {
+    transform: translateX(100%);
+    /* Fully inside from the right side */
+  }
+
+  100% {
+    transform: translateX(90%);
+    /* Halfway open from the right side */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.cs-shape_wrap_2 {
+  position: relative;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.cs-shape_2 .div {
+  background-color: #000;
+  transform: rotate(45deg);
+  height: 100%;
+  width: 100%;
+}
+
+.div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.cs-shape_2 {
+  position: absolute;
+  height: 320px;
+  width: 320px;
+
+}
+
+.cs-shape_wrap_2 .cs-shape_2 {
+  right: -10%;
+  top: 12%;
+  animation: animo-x 6s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+
+
+
+
+
+.dropdown1 {
+  border-top: 2px solid red;
+}
+
+.homepage {
+  height: 80vh;
+  width: 100%;
+}
+
+.homepage::before {
+  content: "";
+  background-image: url('https://arino-nextjs.vercel.app/images/hero_bg.jpeg');
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  height: 120vh;
+  width: 100%;
+}
+
+
+.tatmax::before {
+  content: "";
+  background-image: url('https://arino-nextjs.vercel.app/images/funfact_shape_bg.svg');
+  object-fit: cover;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.imagehover:hover {
+  box-shadow: 3px 3px 30px rgb(202, 122, 18);
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border-top-color: #3498db;
+  /* You can change this color as needed */
+  animation: spin 1s linear infinite;
+}
+
+.cursor,
+.cursor2 {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border: 2px solid red;
+  transform: translate(-50%, -50%);
+  /* Blue border */
+  border-radius: 50%;
+  /* Circular shape */
+  background-color: red;
+  /* Semi-transparent blue background */
+  pointer-events: none;
+  /* Cursor should not interact with elements */
+  z-index: 9999;
+  /* Ensure the cursor is on top of other elements */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
+}
+
+.rowman {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cursor2 {
+  width: 40px;
+  height: 40px;
+  border-color: red;
+  background-color: transparent;
+}
+
+.colx8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.cursor:hover,
+.cursor2:hover {
+  transform: scale(1.2);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color:
+    white;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:
+    red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+
+  transform-origin: bottom left;
+
+}
+
+.imgtext1::after {
+  content: 'UI/UX Design';
+  color: white;
+  opacity: 0.8;
+  z-index: -1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.swiper-container {
+  width: 750px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 300px;
+}
+
+.cs-moving_text_wrap {
+  font-family: helvetica;
+  overflow: hidden;
+  font-size: 120px;
+  line-height: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--accent);
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cs-moving_text_in {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  min-width: 100%;
+}
+
+.cs-moving_text {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 5px 6px;
+  animation: slide-left 20s linear infinite;
+}
+
+
+/* Responsiveness for Mobile  */
+@media screen and (max-width: 1000px) {
+  .sectext {
+    font-size: 16px;
+  }
+
+  .homepage {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .funfacthero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rand {
+    margin-top: 7%;
+  }
+
+  .sempara {
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+  }
+
+  .counts {
+    margin-top: 7%;
+  }
+
+
+  .awardsman2 {
+    margin-top: 8%;
+  }
+
+
+  .blogpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .blogpage2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 1030px) {
+  .teammanual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .teamprim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teaminfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .randimg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .awardsman {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+  }
+
+}
+
+@media screen and (max-width: 790px) {
+  .teammanual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .servicecom2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .counts1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .adjustmargin {
+    margin-left: 0;
+  }
+
+  .subhead {
+    font-size: 12px;
+  }
+
+  .flexgame {
+    display: flex;
+
+  }
+
+  .awardsman2 {
+    margin-top: 3rem;
+  }
+
+  .icons {
+    padding-top: 2rem;
+  }
+
+  .i1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .i2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .funfacthero {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .funfacthead {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+
+  .sempara {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .rand {
+    width: 100%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1310px) {
+  .servicecom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+  }
+
+  .servicetext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .servicecom2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .nowpara {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    margin-top: 2rem;
+  }
+
+  .sectext {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .adjustimage {
+    height: 100%;
+    width: 100%;
+  }
+
+  .setoverlay {
+    height: 100%;
+    width: 100%;
+  }
+
+  .seto1 {
+    height: 100%;
+    width: 100%;
+  }
+
+  .servicecom2 {
+    padding: 10px;
+  }
+
+  .teammanual {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .herosection {
+    display: flex;
+    flex-direction: column;
   }
 }

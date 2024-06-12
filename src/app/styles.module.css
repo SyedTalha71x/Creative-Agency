@@ -1,0 +1,60 @@
+@keyframes glow {
+    0% {
+        filter: brightness(150%);
+    }
+
+    50% {
+        filter: brightness(200%);
+    }
+
+    100% {
+        filter: brightness(150%);
+    }
+}
+
+.glow-animation {
+    animation: glow 2s infinite alternate;
+}
+
+.gallery {
+    height: 175vh;
+    overflow: hidden;
+    background: rgb(45, 45, 45);
+}
+
+.galleryWrapper {
+    position: relative;
+    top: -12.5vh;
+    height: 200vh;
+    display: flex;
+    gap: 2vw;
+    padding: 2vw;
+}
+
+.column {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    white-space: nowrap;
+}
+
+.imageContainer {
+    position: absolute;
+    height: 33%;
+    width: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+
+}
+
+.imageContainer img {
+    object-fit: cover;
+}
+
+.spacer {
+    height: 100vh;
+}
