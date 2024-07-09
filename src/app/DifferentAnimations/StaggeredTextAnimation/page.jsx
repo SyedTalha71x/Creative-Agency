@@ -49,6 +49,8 @@ const AnimatedText = ({
         };
     }, []);
 
+    const someVariable = text?.split(' ') || [];
+
     return (
         <motion.span
             ref={ref}
@@ -59,7 +61,7 @@ const AnimatedText = ({
                 hidden: {},
             }}
         >
-            {text.split(" ").map((word, wordIndex) => (
+            {someVariable.map((word, wordIndex) => (
                 <span className="inline-block" key={`${word}-${wordIndex}`}>
                     {word.split("").map((char, charIndex) => (
                         <motion.span

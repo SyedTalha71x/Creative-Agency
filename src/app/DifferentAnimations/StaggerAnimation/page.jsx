@@ -2,7 +2,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 
-const StaggerAnimation = ({ items, initiallyOpen }) => {
+const StaggerAnimation = ({ items = [], initiallyOpen = false }) => {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) {
+        return null;
+    }
     const [open, setOpen] = useState(initiallyOpen);
     const controls = useAnimation();
     const listRef = useRef(null);

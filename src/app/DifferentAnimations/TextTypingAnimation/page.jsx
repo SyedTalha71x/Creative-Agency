@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const TextTypingAnimation = ({ text }) => {
-    const words = text.split(" ");
+    const words = text?.split(' ') || [];
 
     return (
         <div>
