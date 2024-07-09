@@ -21,8 +21,8 @@ export default function Video() {
                 variants={slideUpDownVariants}
                 initial="hidden"
             >
-                <div className='w-auto max-w-[1500px] text-white h-full p-16 lg:h-full mx-auto'>
-                    <div className=''>
+                <div className='w-auto max-w-[1500px] text-white h-full lg:p-16 md:p-16 sm:p-10 p-5 lg:h-full mx-auto'>
+                    <div className='mt-12'>
                         <h1 className='lg:text-5xl md:text-4xl sm:text-3xl text-2xl headsam capitalize text-center font-sans lg:leading-[70px] md:leading-[70px] sm:leading-[30px] leading-[30px] font-bold w-[100%] mx-auto'>
                             <AnimatedText text='Our agile process is ability to adapt and respond to change. Agile organizations view change as an opportunity, not a threat.' />
                         </h1>

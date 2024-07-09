@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowDown } from "react-icons/io";
-import {  FaPhone } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationPin } from "react-icons/fa6";
 import AnimateOnScroll from '../AnimateOnScroll/page'

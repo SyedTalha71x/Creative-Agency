@@ -17,7 +17,7 @@ const Page = () => {
     return (
         <>
             <section className='bg-[#181818]'>
-                <div className='w-auto rand max-w-[1400px] rounded-2xl text-white max-md:flex-col h-full p-16 lg:h-full mx-auto flex bg-[#120101]  md:shadow-box_shadow lg:translate-y-[-5rem]'
+                <div className='w-auto rand max-w-[1400px] rounded-2xl text-white max-md:flex-col h-full lg:p-16 md:p-16 sm:p-16 p-8 lg:h-full mx-auto flex bg-[#120101]  md:shadow-box_shadow lg:translate-y-[-5rem]'
                     style={{
                         backgroundImage: `url('https://arino-nextjs.vercel.app/images/funfact_shape_bg.svg')`,
                         backgroundRepeat: 'no-repeat',

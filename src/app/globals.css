@@ -10,6 +10,15 @@
   background-color: black;
 } */
 
+@media screen and (max-width: 600px) {
+  .hero-video {
+    display: none;
+
+  }
+}
+
+
+
 .rowservice {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;

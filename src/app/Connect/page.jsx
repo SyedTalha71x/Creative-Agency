@@ -13,7 +13,7 @@ const Connect = () => {
         }
     };
     return (
-        <div className='bg-[#181818] pb-10 lg:pt-20 md:pt-10 sm:pt-10 pt-3 lg:p-10 md:p-8 sm:p-6 p-4'>
+        <div className='bg-[#181818] pb-10 lg:pt-20 md:pt-10 sm:pt-10 pt-2 lg:p-10 md:p-8 sm:p-4 p-0'>
             <AnimateOnScroll
                 variants={zoomInOutVariants}
                 initial="hidden"
@@ -22,7 +22,7 @@ const Connect = () => {
 
                 <div
 
-                    className='w-auto max-w-[1400px] flex justify-center items-center flex-col rounded-2xl text-white h-full p-[70px] lg:h-full mx-auto bg-[#120101] md:shadow-box_shadow'
+                    className='w-auto max-w-[1400px] flex justify-center items-center flex-col rounded-2xl text-white h-full lg:p-[70px] md:p-[70px] sm:p-10 p-10 lg:h-full mx-auto bg-[#120101] md:shadow-box_shadow'
                     style={{
                         backgroundImage: `url('https://arino-nextjs.vercel.app/images/funfact_shape_bg.svg')`,
                         backgroundRepeat: 'no-repeat',

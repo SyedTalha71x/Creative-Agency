@@ -16,7 +16,7 @@ const Hero = () => {
                         <div className='grid grid-cols-2 gap-12 herosection '>
                             <div>
                                 <section>
-                                    <div className='lg:text-[100px] md:text-6xl sm:text-4xl text-[28px] w-[70%] font-extrabold primtext capitalize'>
+                                    <div className='lg:text-[100px] md:text-6xl sm:text-4xl text-[30px] w-[70%] font-extrabold primtext capitalize'>
                                         <AnimatedText text='Creativity In Our BloodLine' />
                                     </div>
                                 </section>
@@ -28,8 +28,9 @@ const Hero = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='rounded-3xl overflow-hidden shadow-lg'>
+                                <div className='rounded-3xl overflow-hidden shadow-lg hero-video'>
                                     <ReactPlayer
+
                                         width="100%"
                                         height="100%"
                                         url={videoSrc}

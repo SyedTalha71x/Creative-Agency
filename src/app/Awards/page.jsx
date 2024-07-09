@@ -26,7 +26,7 @@ const Awards = () => {
 
     return (
         <section className='bg-[#181818]'>
-            <div className='w-auto max-w-[1500px] lg:pb-[6rem] md:pb-[3rem] sm:pb-[2rem] pb-[1rem] text-white max-md:flex-col h-full p-16 lg:h-full mx-auto flex justify-center items-center '>
+            <div className='w-auto max-w-[1500px] lg:pb-[6rem] md:pb-[3rem] sm:pb-[2rem] pb-[1rem] text-white max-md:flex-col h-full lg:p-16 md:p-16 sm:p-16 p-6 lg:h-full mx-auto flex justify-center items-center '>
                 <div className='mt-14'>
                     {/* <div className='cs-shape_wrap_2'>
                         <div className='cs-shape_2'>

@@ -42,10 +42,10 @@ const MovingText = () => {
                 initial="hidden"
                 animate={mainControls}
                 className='cs-moving_text_in' >
-                <div className='cs-moving_text mt-10  text-center  lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] capitalize'>
+                <div className='cs-moving_text mt-10  text-center  lg:text-[100px] md:text-[70px] sm:text-[50px] text-[42px] capitalize'>
                     Our reputed world wide partners
                 </div>
-                <div className='cs-moving_text mt-10 text-center  lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] capitalize'>
+                <div className='cs-moving_text mt-10 text-center  lg:text-[100px] md:text-[70px] sm:text-[50px] text-[42px] capitalize'>
                     Our reputed world wide partners
                 </div>
             </motion.div>
