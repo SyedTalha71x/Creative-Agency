@@ -1,8 +1,7 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
-import { motion, useAnimation } from "framer-motion"
+import React, { useEffect, useState } from 'react'
 import AnimateOnScroll from '../AnimateOnScroll/page';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 
 
 const images = [

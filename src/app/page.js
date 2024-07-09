@@ -10,7 +10,6 @@ import Team from '../app/Team/page';
 import MovingText from '../app/Movingtext/page';
 import Slider from '../app/Slider/page';
 import Projects from '../app/Projects/page';
-import Parallax from '../app/ParallaxAffect/page';
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);

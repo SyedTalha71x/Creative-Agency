@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
-const StaggeredTextAnimation = {
+const staggeredTextAnimation = {
     hidden: {
         opacity: 0,
         y: 20,
@@ -11,14 +11,14 @@ const StaggeredTextAnimation = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.3, // Increased duration for better visibility
+            duration: 0.3,
         },
     },
 };
 
 const AnimatedText = ({
     text,
-    animation = textAnimation,
+    animation = staggeredTextAnimation,
 }) => {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
@@ -77,4 +77,4 @@ const AnimatedText = ({
     );
 };
 
-export default StaggeredTextAnimation;
+export default AnimatedText;

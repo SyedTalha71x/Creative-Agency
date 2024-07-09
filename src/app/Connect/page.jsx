@@ -1,6 +1,5 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
-import { motion, useAnimation } from "framer-motion"
+import React from 'react'
 import { IoArrowForward } from "react-icons/io5";
 import AnimateOnScroll from '../AnimateOnScroll/page';
 

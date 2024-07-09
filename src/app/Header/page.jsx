@@ -1,20 +1,13 @@
 "use client";
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { Montserrat } from 'next/font/google'
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaBullseye, FaPhone } from "react-icons/fa";
+import {  FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationPin } from "react-icons/fa6";
-import { motion, useAnimation } from "framer-motion";
-import AnimateOnScroll from '../AnimateOnScroll/page';
+import AnimateOnScroll from '../AnimateOnScroll/page'
 
-
-const montserrat = Montserrat({
-    weight: ['800'],
-    subsets: ['latin']
-})
 
 const Modal = ({ isOpen, onClose, message }) => {
     if (!isOpen) return null;
@@ -230,7 +223,7 @@ const Page = () => {
                 >
                     <div
                         className='flex flex-wrap items-center justify-around gap-4 w-full'>
-                        <div className={montserrat.className}>
+                        <div>
                             <Link href="/">
                                 <h1 className='text-3xl font-extrabold'><span className='text-red-600'>A</span>rino</h1>
                             </Link>

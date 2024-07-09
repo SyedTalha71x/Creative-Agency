@@ -7,7 +7,7 @@ import styles from '../styles.module.css';
 import AnimatedText from '../DifferentAnimations/StaggeredTextAnimation/page';
 import AnimateOnScroll from '../AnimateOnScroll/page';
 
-const Video = () => {
+export default function Video() {
     const ref = useRef(null);
 
     const slideUpDownVariants = {
@@ -46,4 +46,3 @@ const Video = () => {
     );
 };
 
-export default Video;

@@ -1,9 +1,6 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from '../app/Header/page'
 import Footer from '../app/Footer/page'
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Creative Agency",
@@ -13,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />

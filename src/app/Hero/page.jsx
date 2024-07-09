@@ -1,15 +1,10 @@
 "use client";
-import { Montserrat } from 'next/font/google';
 import { IoArrowForward } from "react-icons/io5";
 import React from 'react';
 import FunFact from '../FunFact/page';
 import AnimatedText from '../DifferentAnimations/StaggeredTextAnimation/page';
 import ReactPlayer from 'react-player';
 
-const montserrat = Montserrat({
-    weight: ['800'],
-    subsets: ['latin']
-});
 
 const Hero = () => {
     const videoSrc = '/style1.mp4';
@@ -20,8 +15,8 @@ const Hero = () => {
                     <div className='lg:mt-[6%] md:mt-[5%] sm:mt-[4%] mt-[3%]'>
                         <div className='grid grid-cols-2 gap-12 herosection '>
                             <div>
-                                <section className={montserrat.className}>
-                                    <div className='lg:text-[100px] md:text-6xl sm:text-4xl text-[28px] w-[70%] primtext capitalize'>
+                                <section>
+                                    <div className='lg:text-[100px] md:text-6xl sm:text-4xl text-[28px] w-[70%] font-extrabold primtext capitalize'>
                                         <AnimatedText text='Creativity In Our BloodLine' />
                                     </div>
                                 </section>
@@ -55,4 +50,5 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Hero
+

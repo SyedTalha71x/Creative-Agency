@@ -1,12 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import { Montserrat } from "next/font/google";
 
-const MontserratFont = Montserrat({
-    weight: ['900'],
-    subsets: ['latin'],
-});
 export default function ParallexAffect() {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -25,7 +20,7 @@ export default function ParallexAffect() {
                 ref={ref}
                 className="w-auto    max-w-[1500px] mx-auto h-[90vh] overflow-hidden  relative grid place-items-center"
             >
-                <div className={MontserratFont.className}>
+                <div >
 
 
                     <motion.h1
