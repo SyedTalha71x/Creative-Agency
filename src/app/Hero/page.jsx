@@ -3,20 +3,17 @@ import { IoArrowForward } from "react-icons/io5";
 import React from 'react';
 import FunFact from '../FunFact/page';
 import AnimatedText from '../DifferentAnimations/StaggeredTextAnimation/page';
-import ReactPlayer from 'react-player';
-
 
 const Hero = () => {
-    const videoSrc = '/style1.mp4';
     return (
         <>
             <div className='homepage text-white cursor-pointer'>
                 <div className='w-[80%] mx-auto'>
                     <div className='lg:mt-[6%] md:mt-[5%] sm:mt-[4%] mt-[3%]'>
-                        <div className='grid grid-cols-2 gap-12 herosection '>
+                        <div className=' herosection '>
                             <div>
                                 <section>
-                                    <div className='lg:text-[100px] md:text-6xl sm:text-4xl text-[30px] w-[70%] font-extrabold primtext capitalize'>
+                                    <div className='lg:text-[120px] md:text-6xl sm:text-4xl text-[30px] w-[70%] font-extrabold primtext capitalize'>
                                         <AnimatedText text='Creativity In Our BloodLine' />
                                     </div>
                                 </section>
@@ -25,21 +22,6 @@ const Hero = () => {
                                         <AnimatedText text='Get a Quote'></AnimatedText>
                                         <IoArrowForward className='text-xl mb-1 inline-block' />
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className='rounded-3xl overflow-hidden shadow-lg hero-video'>
-                                    <ReactPlayer
-
-                                        width="100%"
-                                        height="100%"
-                                        url={videoSrc}
-                                        light={false}
-                                        pip={true}
-                                        playing={true}
-                                        loop={true}
-                                        muted={true}
-                                    />
                                 </div>
                             </div>
                         </div>
@@ -51,5 +33,4 @@ const Hero = () => {
     );
 };
 
-export default Hero
-
+export default Hero;
