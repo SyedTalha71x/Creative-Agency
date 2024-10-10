@@ -14,51 +14,51 @@ function App() {
   const closeMenu = () => setToggleMenu(false);
 
   return (
-    <div className="bg-transparent text-white">
+    <div className="bg-black text-white">
       <nav>
-        <div className="max-w-7xl mx-auto">
-          <div className="flex mx-auto justify-between w-5/6 ">
-            <div className="flex items-center justify-between gap-16 my-12 w-full">
-              {/* logo */}
-              <div>
-                <a
-                  href="/"
-                  className="flex gap-1 font-extrabold text-white items-center "
-                >
-                  <PaperAirplaneIcon className="h-6 w-6 text-primary" />
-                  <span>Bloodline</span>
-                </a>
-              </div>
-              {/* primary */}
-              <div className="hidden lg:flex gap-8 justify-center w-full">
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition-all duration-300"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition-all duration-300"
-                >
-                  Benefits
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition-all duration-300"
-                >
-                  Our Classes
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-red-600 transition-all duration-300"
-                >
-                  Contact Us
-                </a>
-              </div>
+        <div className="max-w-8xl mx-auto">
+          <div className="flex mx-auto justify-between w-5/6 items-center p-10">
+            {/* Logo aligned to the left */}
+            <div className="flex items-center">
+              <a
+                href="/"
+                className="flex gap-1 font-extrabold text-white items-center"
+              >
+                <PaperAirplaneIcon className="h-6 w-6 text-primary" />
+                <span>Bloodline</span>
+              </a>
             </div>
 
-            <div className="flex gap-6">
+            {/* Primary links aligned to the right on large screens */}
+            <div className="hidden lg:flex gap-8 justify-end w-full">
+              <a
+                href="#"
+                className="hover:text-red-600 transition-all duration-300"
+              >
+                Home
+              </a>
+              <a
+                href="#"
+                className="hover:text-red-600 transition-all duration-300"
+              >
+                Benefits
+              </a>
+              <a
+                href="#"
+                className="hover:text-red-600 transition-all duration-300"
+              >
+                Our Classes
+              </a>
+              <a
+                href="#"
+                className="hover:text-red-600 transition-all duration-300"
+              >
+                Contact Us
+              </a>
+            </div>
+
+            {/* Additional buttons and icons */}
+            <div className="flex gap-6 items-center">
               <div className="hidden xs:flex items-center gap-10">
                 <div className="hidden lg:flex items-center gap-2">
                   <MoonIcon className="h-6 w-6" />
@@ -70,6 +70,7 @@ function App() {
                   </button>
                 </div>
               </div>
+
               {/* Mobile navigation toggle */}
               <div className="lg:hidden flex items-center">
                 <button onClick={() => setToggleMenu(!toggleMenu)}>
@@ -79,7 +80,7 @@ function App() {
             </div>
           </div>
         </div>
-        
+
         {/* Backdrop */}
         {toggleMenu && (
           <div
@@ -87,8 +88,8 @@ function App() {
             onClick={closeMenu} // Clicking the backdrop closes the sidebar
           />
         )}
-        
-        {/* mobile navigation (sidebar) */}
+
+        {/* Mobile navigation (sidebar) */}
         <div
           className={`fixed z-40 top-0 left-0 w-[50%] h-full bg-black text-white overflow-hidden transform ${
             toggleMenu ? "translate-x-0" : "-translate-x-full"
@@ -104,7 +105,7 @@ function App() {
           <div className="flex flex-col gap-2 font-bold tracking-wider p-4">
             <a
               href="#"
-              className=" hover:bg-red-600 hover:text-white p-2 text-sm rounded-md transition-all"
+              className="hover:bg-red-600 hover:text-white p-2 text-sm rounded-md transition-all"
             >
               Home
             </a>

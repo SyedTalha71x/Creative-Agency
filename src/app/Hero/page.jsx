@@ -9,11 +9,11 @@ const Hero = () => {
         <>
             <div className='homepage text-white cursor-pointer'>
                 <div className='w-[80%] mx-auto'>
-                    <div className='lg:mt-[6%] md:mt-[5%] sm:mt-[4%] mt-[3%]'>
+                    <div className='lg:mt-[11%] md:mt-[5%] sm:mt-[4%] mt-[3%]'>
                         <div className=' herosection '>
                             <div>
                                 <section>
-                                    <div className='lg:text-[120px] md:text-6xl sm:text-4xl text-[30px] w-[70%] font-extrabold primtext capitalize'>
+                                    <div className='lg:text-[115px] md:text-6xl sm:text-4xl text-[30px] w-[80%] font-extrabold primtext capitalize'>
                                         <AnimatedText text='Creativity In Our BloodLine' />
                                     </div>
                                 </section>
